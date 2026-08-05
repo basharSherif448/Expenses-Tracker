@@ -1,1 +1,75 @@
+ .container
+{
+
+    background: rgba(248, 250, 252, 0.9);
+   
+    border-radius: 20px;
+    padding: 30px;
+    
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    border-color: #E5E7EB;
+    color: #1F2937;
+    margin-right: 40px;
+  
+}
+.h
+{
  
+
+ height: 70px;
+ text-align: center;
+ font-size: 40px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ margin-bottom: 30px;
+ padding: 4px;
+
+}
+.p1
+{
+
+}
+#s
+{
+  
+ 
+ height: 40px;
+ width: 100px;
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 70px;
+ 
+}
+#b
+{
+  
+  width: 100x;
+  
+ margin-left: 170px;
+
+     background-color: #2563EB;
+     height: 30px;
+}
+#c
+{
+
+  width: 70px;
+  color: rgb(8, 8, 255);
+  background-color: black;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("jakub-zerdzicki-heiYgqp0Tsk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#f
+{
+  display: inline;
+ font-size: 50x;
+ color: white;
+}
