@@ -11,7 +11,7 @@ price=Number(document.getElementById("price").value);
 expense.name=name;
 expense.date=date;
 expense.price=price;
-if(name!=""&&price!="")
+if(name!=""&&price!=""&&price>=0)
 {
 sum+=expense.price;
 document.getElementById("sum").textContent=`Total: ${sum} Egp`;

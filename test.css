@@ -4,7 +4,7 @@ body
   min-height: 100vh;
  margin: 0px;
  text-align: center;
-   text-shadow: 0px 0px 3px white;
+  
     font-family: "Poppins", sans-serif;
 }
 label {
@@ -14,7 +14,7 @@ label {
 .container
 {
   padding: 30px;
-  width: 50%;
+  width: 90%;
   max-width: 500px;
   border: 1px solid;
   margin-left: auto;
@@ -46,12 +46,14 @@ input {
 #li-btn
 {
   display: inline;
-  border-radius: 0;
-  background-image: url("d1.jpg");
-  background-size: cover;
-  background-position: center;
-  
-  padding: 20px ;
+    border-radius: 0;
+    background-image: url(d1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    padding-top: 25px;
+    margin-left: 6px;
+    margin-bottom: 9px;
 }
 #li-btn:hover
 {
@@ -88,4 +90,18 @@ ul
 {
   list-style-type: none;
   text-align: start;
+}
+.app-header {
+    margin-top: 30px;
+    color: #ffffff;
+}
+.app-header h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+.app-header p {
+    font-size: 14px;
+    opacity: 0.85;
+    margin: 0;
 }
