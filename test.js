@@ -26,7 +26,7 @@ function render(expense_arr)
     let s=""
     for(let i=0;i<expense_arr.length;i++)
     {
-        s += `<li><b>${expense_arr[i].name}</b> - ${expense_arr[i].price} EGP <span>${expense_arr[i].date}</span></li>`;
+        s += `<li id="li_${i}"  ><b>${expense_arr[i].name}</b> - ${expense_arr[i].price} EGP <span>${expense_arr[i].date}<button onclick="delete_item(${i})" id="li-btn"></button></span></li>`;
         
     }
     document.getElementById("lists").innerHTML=s;
@@ -44,3 +44,15 @@ document.getElementById("reset-btn").addEventListener("click",function()
 
 
 })
+function delete_item(index) {
+    sum -= expense_arr[index].price;
+    
+    expense_arr.splice(index, 1);
+    
+    updateTotal();
+    render(expense_arr);
+}
+
+function updateTotal() {
+    document.getElementById("sum").textContent = `Total: ${sum} Egp`;
+}
