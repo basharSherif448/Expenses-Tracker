@@ -19,13 +19,42 @@ label {
   border: 1px solid;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  
   border-radius: 50px;
   background-color: white;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
  
 }
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 900px;
+  margin: 40px auto;
+}
 
+.stats-sidebar {
+  background: white;
+  padding: 24px;
+  border-radius: 30px;
+  width: 260px;
+  text-align: left;
+  border: 1px solid;
+}
+
+.stat-card {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8f9fe;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 20px;
+  color: #333;
+}
 input {
     padding: 10px;
     border: 1px solid #ccc;
