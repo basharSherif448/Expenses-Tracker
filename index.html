@@ -7,29 +7,43 @@
 </head>
 <body>
     <header class="app-header">
-    <h1>Personal Expense Tracker</h1>
-    <p>Keep track of your daily spending effortlessly</p>
-</header>
-   <div class="container">
-        <h1>Add Expense</h1>
-        <label for="name">Expense name</label>
-        <input type="text" id="name"><br><br><br>
-        <label for="prive">Expense price</label>
-        <input type="number" id="price"><br><br><br>
-         <label for="date">Date</label>
-         <input type="date" id="date"><br><br><br>
-         <div  class="buttons">
-        <button  id="save-btn">Save</button>
-        <button  id="reset-btn">Reset</button>
+        <h1>Personal Expense Tracker</h1>
+        <p>Keep track of your daily spending effortlessly</p>
+    </header>
+
+    <div class="dashboard">
+        <div class="container">
+            <h1>Add Expense</h1>
+            <label for="name">Expense name</label>
+            <input type="text" id="name"><br><br><br>
+            <label for="price">Expense price</label>
+            <input type="number" id="price"><br><br><br>
+            <label for="date">Date</label>
+            <input type="date" id="date"><br><br><br>
+            <div class="buttons">
+                <button id="save-btn">Save</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <hr>
+            <h1>Expenses</h1>
+            <p style="text-align: center;" id="sum">Total: 0 Egp</p>
+            <ul id="lists"></ul>
         </div>
-        <hr>
-        <h1>Expenses</h1>
-        <p style="text-align: center;" id="sum">Total: 0 Egp</p>
-        <ul id="lists">
+
+        <aside class="stats-sidebar">
+            <h2>Overview</h2>
+            <div class="stat-card">
+                <span>Transactions</span>
+                <strong id="stat-count">0</strong>
+            </div>
+            <div class="stat-card">
+                <span>Average Cost</span>
+                <strong id="stat-avg">0 Egp</strong>
+            </div>
             
-           
-        </ul>
-   </div>
-   <script src="test.js"></script>
+        </aside>
+    </div>
+
+    <script src="test.js"></script>
 </body>
 </html>
